@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+
+@font-face {
+    font-family: misoregular;
+    src: url('fonts/miso-webfont.woff2') format('woff2'),
+         url('fonts/miso-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: misobold;
+    src: url('fonts/miso-bol-webfont.woff2') format('woff2'),
+         url('fonts/miso-bol-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+
+--main: misobold, sans-serif; 
+--regular:misoregular, sans-serif;  ;
+--font: Lato, sans-serif;
+
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+	transition: all .3s ease-in-out;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+html { 
+height: 100%; }
+
+body, html {a
+	min-height: 100%;
+	width: 100%;
+}
+
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+
+/* Main Styles */
+
+body { 
+	background: #fdde7e;
+ }
+
+.container {
+	width: 100%;
+	max-width: 1170px;
+	padding: 80px 15px;
+	margin: 0 auto; 
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+
+}
+
+.block {
+	background: #fff;
+	width: 31.5%;
+	height: 445px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: 30px;
+	border-radius: 2px;
+	-webkit-box-shadow: 0px 4px 15px 1px rgba(0,0,0,0.29);
+-moz-box-shadow: 0px 4px 15px 1px rgba(0,0,0,0.29);
+box-shadow: 0px 4px 15px 1px rgba(0,0,0,0.29);
+ }
+
+ .block:hover {
+ 	transform: scale(1.1);
+ 	-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.29);
+-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.29);
+box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.29);
+
+ }
+
+
+.block--big { 
+	height: 500px;
+ }
+
+ .block__header {
+ 	font-family: var(--main);
+ 	font-size: 70px;
+ 	letter-spacing: 2.5;
+ 	color: #02995b;
+   }
+
+
+ .block__image { 
+  }
+
+  .block__wrapper  {
+  	color: #333;
+  	text-align: center;
+  	height: 120px;
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: space-between;
+  	  }
+
+  .block__title { 
+  	font-family: var(--regular);
+  	font-size: 56px;
+
+   }
+
+   .block__description { 
+   	font-family: var(--font);
+   	font-size: 20px;
+    }
